@@ -1,0 +1,2097 @@
+{
+ "atualizado": "2026-11-18",
+ "visitas": [
+  {
+   "id": "agrestina",
+   "nome": "UFV Agrestina",
+   "local": "Agrestina/PE",
+   "endereco": "Margem da rodovia PE-120",
+   "data": "2026-11-04",
+   "tipo": "Visita técnica de terreno",
+   "participantes": [
+    {
+     "n": "Felipe Alves",
+     "a": "Engenharia"
+    },
+    {
+     "n": "Bruna Nahla",
+     "a": "Construção"
+    },
+    {
+     "n": "Ricardo Carelli",
+     "a": "Desenvolvimento"
+    }
+   ],
+   "capa": 39,
+   "centro": [
+    -8.4735,
+    -35.917
+   ],
+   "poligonos": [
+    {
+     "nome": "Área de licenciamento A",
+     "tipo": "lic",
+     "cor": "#F33C13",
+     "area": 9.85,
+     "pts": [
+      [
+       -8.4735598,
+       -35.9173325
+      ],
+      [
+       -8.4749054,
+       -35.9188415
+      ],
+      [
+       -8.4747283,
+       -35.919017
+      ],
+      [
+       -8.4751092,
+       -35.919443
+      ],
+      [
+       -8.4761286,
+       -35.9178862
+      ],
+      [
+       -8.4732484,
+       -35.915361
+      ],
+      [
+       -8.4732129,
+       -35.9154019
+      ],
+      [
+       -8.4712773,
+       -35.9137057
+      ],
+      [
+       -8.4704748,
+       -35.9146806
+      ],
+      [
+       -8.4715119,
+       -35.9159265
+      ],
+      [
+       -8.4720605,
+       -35.9153907
+      ],
+      [
+       -8.4736951,
+       -35.9171739
+      ],
+      [
+       -8.4735598,
+       -35.9173325
+      ]
+     ]
+    },
+    {
+     "nome": "Área de licenciamento B",
+     "tipo": "lic",
+     "cor": "#EC6726",
+     "area": 7.91,
+     "pts": [
+      [
+       -8.4715119,
+       -35.9159265
+      ],
+      [
+       -8.4720646,
+       -35.9166
+      ],
+      [
+       -8.4715977,
+       -35.9169846
+      ],
+      [
+       -8.4717739,
+       -35.9172172
+      ],
+      [
+       -8.4723861,
+       -35.9179281
+      ],
+      [
+       -8.4727619,
+       -35.9183625
+      ],
+      [
+       -8.4730083,
+       -35.9186506
+      ],
+      [
+       -8.4732239,
+       -35.9189136
+      ],
+      [
+       -8.4735861,
+       -35.9193567
+      ],
+      [
+       -8.4739578,
+       -35.9199106
+      ],
+      [
+       -8.4740053,
+       -35.9199711
+      ],
+      [
+       -8.4742233,
+       -35.9202628
+      ],
+      [
+       -8.4743558,
+       -35.9204397
+      ],
+      [
+       -8.4744108,
+       -35.9205064
+      ],
+      [
+       -8.4751092,
+       -35.919443
+      ],
+      [
+       -8.4747283,
+       -35.919017
+      ],
+      [
+       -8.4749054,
+       -35.9188415
+      ],
+      [
+       -8.4735598,
+       -35.9173325
+      ],
+      [
+       -8.4736951,
+       -35.9171739
+      ],
+      [
+       -8.4720605,
+       -35.9153907
+      ],
+      [
+       -8.4715119,
+       -35.9159265
+      ]
+     ]
+    },
+    {
+     "nome": "Área não licenciada",
+     "tipo": "nao",
+     "cor": "#FFFFFF",
+     "area": 1.21,
+     "pts": [
+      [
+       -8.4704748,
+       -35.9146806
+      ],
+      [
+       -8.4712773,
+       -35.9137057
+      ],
+      [
+       -8.471924,
+       -35.9142724
+      ],
+      [
+       -8.4714477,
+       -35.9148004
+      ],
+      [
+       -8.4713253,
+       -35.9146915
+      ],
+      [
+       -8.4708984,
+       -35.9151894
+      ],
+      [
+       -8.4704748,
+       -35.9146806
+      ]
+     ]
+    }
+   ],
+   "satelite": {
+    "img": "sat/agrestina.jpg",
+    "x0": 26858212,
+    "y0": 35139074,
+    "w": 1572,
+    "h": 1395,
+    "attrib": "Esri World Imagery (Esri, Maxar, Earthstar Geographics)"
+   },
+   "parecer": {
+    "nivel": "ressalvas",
+    "titulo": "Viável com ressalvas",
+    "texto": "Terreno com conexão favorável e bom acesso, mas rocha aflorada generalizada, açude dentro do polígono e risco de segurança exigem investigação e ajuste de layout antes do projeto básico."
+   },
+   "kpis": [
+    {
+     "v": "~17,8 ha",
+     "l": "em área de licenciamento (2 áreas, KMZ)"
+    },
+    {
+     "v": "3 km",
+     "l": "da cidade de Agrestina (24 mil hab.)"
+    },
+    {
+     "v": "27 km",
+     "l": "de Caruaru (380 mil hab.)"
+    },
+    {
+     "v": "Mar–Jul",
+     "l": "período chuvoso da região"
+    }
+   ],
+   "regiao": {
+    "itens": [
+     {
+      "k": "Bioma",
+      "v": "Caatinga, em transição com a Mata Atlântica (Agreste pernambucano)"
+     },
+     {
+      "k": "Vegetação no local",
+      "v": "Pastagem aberta com árvores esparsas; sem mata fechada"
+     },
+     {
+      "k": "Relevo",
+      "v": "Suave, com caimento natural em direção ao açude"
+     },
+     {
+      "k": "Clima",
+      "v": "Tropical com estação seca, transição para o semiárido"
+     },
+     {
+      "k": "Chuva média anual",
+      "v": "≈ 630 mm"
+     },
+     {
+      "k": "Período chuvoso",
+      "v": "Março a julho · seco de agosto a fevereiro"
+     }
+    ],
+    "chuva": [
+     54,
+     53,
+     67,
+     67,
+     70,
+     76,
+     67,
+     52,
+     40,
+     31,
+     24,
+     31
+    ],
+    "obs": "Planejar terraplenagem, drenagem e fundações preferencialmente na janela seca (ago–fev). Chuvas concentradas de mar–jul podem afetar acesso e produtividade de obra.",
+    "fontes": [
+     {
+      "t": "Chuva mensal: Climatempo — climatologia de Agrestina (médias de 30 anos)",
+      "u": "https://www.climatempo.com.br/climatologia/5908/agrestina-br"
+     },
+     {
+      "t": "Período chuvoso (mar–jul) no Agreste: Rodrigues, L. O. — dissertação UFPE, dados APAC 1963–2016",
+      "u": "https://repositorio.ufpe.br/bitstream/123456789/31855/1/DISSERTA%c3%87%c3%83O%20Luana%20de%20Oliveira%20Rodrigues.pdf"
+     },
+     {
+      "t": "Bioma (Caatinga; Mata Atlântica): IBGE, via perfil municipal de Agrestina",
+      "u": "https://cepsbrasil.com.br/pe/agrestina/ibge"
+     }
+    ]
+   },
+   "destaques": [
+    {
+     "t": "pos",
+     "x": "Conexão favorável: rede MT margeia o polígono e o ponto de conexão fica em local limpo na margem da PE-120."
+    },
+    {
+     "t": "neg",
+     "x": "Rocha aflorada em toda a área, com maior concentração ao sul do açude. Principal risco de CAPEX (fundação e terraplenagem)."
+    },
+    {
+     "t": "neg",
+     "x": "Açude de ~7.000 m² dentro do polígono, recebendo drenagem do outro lado da rodovia via passagem manilhada."
+    },
+    {
+     "t": "neg",
+     "x": "Região sensível a roubos: a UFV vizinha já foi roubada algumas vezes."
+    },
+    {
+     "t": "pos",
+     "x": "Oportunidade: faixa a leste do polígono com boa topografia, sem rochas e com poucas árvores."
+    }
+   ],
+   "checklist": [
+    {
+     "n": 1,
+     "item": "Ponto de conexão",
+     "st": "ok",
+     "campo": "Local limpo, na margem da PE-120 (rede que passa margeando o terreno).",
+     "impl": "Sem obstáculo físico identificado para a conexão.",
+     "fotos": [
+      29,
+      30,
+      5
+     ]
+    },
+    {
+     "n": 2,
+     "item": "Acesso pela via principal",
+     "st": "ok",
+     "campo": "Acesso pela PE-120.",
+     "impl": "Acesso direto para logística de obra (carretas de módulos e estruturas).",
+     "fotos": [
+      4,
+      36
+     ]
+    },
+    {
+     "n": 3,
+     "item": "Limites, cercas, marcos e confrontantes",
+     "st": "atencao",
+     "campo": "Área parcialmente cercada (criação de gado de corte). Cerca existente limitando o próprio terreno, sendo necessária realocação/retirada em alguns trechos.",
+     "impl": "Prever remoção/realocação de cerca e cercamento definitivo no orçamento.",
+     "fotos": [
+      29,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "item": "Ocupações, benfeitorias e atividades produtivas",
+     "st": "atencao",
+     "campo": "Terreno usado como pastagem para gado de corte. Rede MT margeando o polígono. Possibilidade de ponto de energia com o proprietário.",
+     "impl": "Alinhar retirada do gado com o proprietário. Ponto de energia do proprietário pode atender o canteiro.",
+     "fotos": [
+      32,
+      33
+     ]
+    },
+    {
+     "n": 5,
+     "item": "Áreas alagáveis, erosões, taludes e drenagens",
+     "st": "critico",
+     "campo": "Açude ocupando ~7.000 m² do polígono. Sistema de drenagem capta água de outro açude do outro lado da rodovia (provavelmente no transbordo) e a transpõe por passagem manilhada. Caimento natural do terreno escoa o excedente do açude interno até outro açude, mais baixo, fora do polígono (extremo noroeste).",
+     "impl": "Reduz área útil e cria caminho preferencial de água dentro da UFV. Exige estudo hidrológico e definição: manter, aterrar ou desviar o açude.",
+     "fotos": [
+      1,
+      31,
+      34,
+      20,
+      38
+     ]
+    },
+    {
+     "n": 6,
+     "item": "Poste ou rede estruturada mais próxima",
+     "st": "ok",
+     "campo": "Rede MT que margeia uma das faces do polígono.",
+     "impl": "Distância curta até a rede reduz o custo do ramal de conexão.",
+     "fotos": [
+      5,
+      30
+     ]
+    },
+    {
+     "n": 7,
+     "item": "Outras cargas, consumidores ou geradores próximos",
+     "st": "ok",
+     "campo": "UFV de 3,33 MWp da SolarVolt em frente ao polígono, do outro lado da PE-120.",
+     "impl": "Sem impacto para a UFV Agrestina. Serve de referência local (histórico de roubos e retirada de matacões).",
+     "fotos": [
+      2,
+      3,
+      36,
+      37,
+      35
+     ]
+    },
+    {
+     "n": 8,
+     "item": "Faixa de servidão, autorização de passagem ou negociação fundiária",
+     "st": "atencao",
+     "campo": "Identificada boa área na faixa leste, vizinha ao polígono: boa topografia, sem rochas e com poucos indivíduos arbóreos.",
+     "impl": "Oportunidade de realocar parte do arranjo para fugir das rochas e do açude. Depende de negociação fundiária.",
+     "fotos": [
+      41
+     ]
+    },
+    {
+     "n": 9,
+     "item": "Cruzamentos (rodovias, ferrovias, rios, adutoras, gasodutos)",
+     "st": "atencao",
+     "campo": "Sem cruzamentos; polígono na margem da PE-120. Estrada em reforma (muita poeira). Segundo o desenvolvedor, será asfaltada.",
+     "impl": "Poeira aumenta a frequência de lavagem dos módulos no O&M até o asfaltamento.",
+     "fotos": [
+      4,
+      36
+     ]
+    },
+    {
+     "n": 10,
+     "item": "Interferências para sombreamento",
+     "st": "ok",
+     "campo": "Não foram identificados elementos externos que gerem sombra sobre a área. Edificações no extremo sudoeste do terreno, a uma distância segura.",
+     "impl": "Sem perda relevante por sombreamento externo. Árvores internas serão suprimidas (item 11).",
+     "fotos": [
+      32,
+      33
+     ]
+    },
+    {
+     "n": 11,
+     "item": "Vegetação, árvores, APP, poda e supressão",
+     "st": "atencao",
+     "campo": "Diversos indivíduos arbóreos no interior do polígono, sendo necessária a supressão.",
+     "impl": "Exige inventário florestal e autorização de supressão no licenciamento ambiental. Impacta o cronograma.",
+     "fotos": [
+      18,
+      22,
+      13,
+      39
+     ]
+    },
+    {
+     "n": 12,
+     "item": "Rochas",
+     "st": "critico",
+     "campo": "Muita rocha aflorada em todas as áreas da UFV, com maior concentração ao sul do açude. Segundo o caseiro, na UFV vizinha também havia muita rocha, e parte foi retirada por se tratar de matacões (blocos soltos no solo) e não de lajes.",
+     "impl": "Pode inviabilizar a estaca cravada direta (pré-furo ou fundação alternativa) e encarecer a terraplenagem. Diferenciar matacão × laje é decisivo para o CAPEX.",
+     "fotos": [
+      14,
+      15,
+      21,
+      27,
+      7,
+      26,
+      12,
+      6
+     ]
+    },
+    {
+     "n": 13,
+     "item": "Segurança",
+     "st": "critico",
+     "campo": "Segundo o caseiro, a região é bem sensível a roubos. A UFV vizinha já foi roubada algumas vezes.",
+     "impl": "Incluir segurança patrimonial no CAPEX/OPEX (cercamento, CFTV, iluminação, vigilância) e na apólice de seguro.",
+     "fotos": [
+      2,
+      3
+     ]
+    },
+    {
+     "n": 14,
+     "item": "Localização",
+     "st": "ok",
+     "campo": "Polígono a 3 km de Agrestina (24.000 hab.) e a 27 km de Caruaru (380.000 hab.).",
+     "impl": "Boa disponibilidade de mão de obra, hospedagem e fornecedores locais.",
+     "fotos": [
+      36,
+      41
+     ]
+    }
+   ],
+   "passos": [
+    {
+     "p": "Alta",
+     "x": "Investigação geotécnica: sondagens e ensaios de arrancamento (pull-out) nas áreas com rocha, para diferenciar matacão × laje e definir a fundação."
+    },
+    {
+     "p": "Alta",
+     "x": "Levantamento topográfico planialtimétrico (drone/RTK) com cadastro de rochas, árvores, açude e cercas."
+    },
+    {
+     "p": "Alta",
+     "x": "Estudo hidrológico do açude e da passagem manilhada: definir se o açude será mantido, aterrado ou desviado."
+    },
+    {
+     "p": "Alta",
+     "x": "Estudo de mecanismos para a segurança do ativo na operação (cercamento, CFTV com monitoramento, iluminação, vigilância e seguro), considerando o histórico de roubos na UFV vizinha."
+    },
+    {
+     "p": "Média",
+     "x": "Avaliar a incorporação da faixa leste ao polígono (negociação fundiária) e simular layout alternativo."
+    },
+    {
+     "p": "Média",
+     "x": "Inventário florestal e pedido de autorização de supressão de vegetação."
+    },
+    {
+     "p": "Baixa",
+     "x": "Programar a lavagem de módulos no O&M considerando a poeira da PE-120 até o asfaltamento."
+    }
+   ],
+   "fotos": [
+    {
+     "id": 1,
+     "arq": "fotos/agrestina/01-20261104-130506-passagem-manilhada-que-joga-agua-n.jpg",
+     "th": "thumbs/agrestina/01-20261104-130506-passagem-manilhada-que-joga-agua-n.jpg",
+     "legenda": "Passagem manilhada que joga água no açude",
+     "hora": "13:05",
+     "gps": null,
+     "cats": [
+      "drenagem"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 2,
+     "arq": "fotos/agrestina/02-img-20261104-wa0054-ufv-vizinha-em-frente-o-poligo.jpg",
+     "th": "thumbs/agrestina/02-img-20261104-wa0054-ufv-vizinha-em-frente-o-poligo.jpg",
+     "legenda": "UFV vizinha em frente o polígono",
+     "hora": "13:00",
+     "gps": null,
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1013
+    },
+    {
+     "id": 3,
+     "arq": "fotos/agrestina/03-img-20261104-wa0060-ufv-vizinha-em-frente-o-poligo.jpg",
+     "th": "thumbs/agrestina/03-img-20261104-wa0060-ufv-vizinha-em-frente-o-poligo.jpg",
+     "legenda": "UFV vizinha em frente o polígono",
+     "hora": "13:02",
+     "gps": null,
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Campo",
+     "w": 1012,
+     "h": 1800
+    },
+    {
+     "id": 4,
+     "arq": "fotos/agrestina/04-img-0993-terreno-na-margem-da-pe-120.jpg",
+     "th": "thumbs/agrestina/04-img-0993-terreno-na-margem-da-pe-120.jpg",
+     "legenda": "Terreno na margem da PE-120",
+     "hora": "12:51",
+     "gps": [
+      -8.476261,
+      -35.917775
+     ],
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 5,
+     "arq": "fotos/agrestina/05-img-0995-rede-que-passa-margeando-o-terreno.jpg",
+     "th": "thumbs/agrestina/05-img-0995-rede-que-passa-margeando-o-terreno.jpg",
+     "legenda": "Rede que passa margeando o terreno",
+     "hora": "13:06",
+     "gps": [
+      -8.476069,
+      -35.917747
+     ],
+     "cats": [
+      "conexao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 6,
+     "arq": "fotos/agrestina/06-img-0997-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/06-img-0997-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:10",
+     "gps": [
+      -8.475206,
+      -35.918114
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 7,
+     "arq": "fotos/agrestina/07-img-0998-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/07-img-0998-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:10",
+     "gps": [
+      -8.475189,
+      -35.918158
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 8,
+     "arq": "fotos/agrestina/08-img-1001-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/08-img-1001-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:11",
+     "gps": [
+      -8.4753,
+      -35.918347
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 9,
+     "arq": "fotos/agrestina/09-img-1002-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/09-img-1002-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:11",
+     "gps": [
+      -8.475303,
+      -35.91835
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 10,
+     "arq": "fotos/agrestina/10-img-1003-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/10-img-1003-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:11",
+     "gps": [
+      -8.475303,
+      -35.918353
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 11,
+     "arq": "fotos/agrestina/11-img-1004-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/11-img-1004-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:14",
+     "gps": [
+      -8.475308,
+      -35.918358
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 12,
+     "arq": "fotos/agrestina/12-img-1005-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/12-img-1005-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:16",
+     "gps": [
+      -8.474783,
+      -35.918136
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 13,
+     "arq": "fotos/agrestina/13-img-1006-presenca-de-rocha-aflorada-e-arvore-no-po.jpg",
+     "th": "thumbs/agrestina/13-img-1006-presenca-de-rocha-aflorada-e-arvore-no-po.jpg",
+     "legenda": "Presença de rocha aflorada e árvore no polígono",
+     "hora": "13:16",
+     "gps": [
+      -8.474567,
+      -35.917811
+     ],
+     "cats": [
+      "rochas",
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 14,
+     "arq": "fotos/agrestina/14-img-1007-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/14-img-1007-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:18",
+     "gps": [
+      -8.474464,
+      -35.917367
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 15,
+     "arq": "fotos/agrestina/15-img-1009-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/15-img-1009-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:19",
+     "gps": [
+      -8.474442,
+      -35.917172
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 16,
+     "arq": "fotos/agrestina/16-img-1011-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/16-img-1011-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:25",
+     "gps": [
+      -8.473436,
+      -35.916319
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 17,
+     "arq": "fotos/agrestina/17-img-1012-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/17-img-1012-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:26",
+     "gps": [
+      -8.473119,
+      -35.916675
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 18,
+     "arq": "fotos/agrestina/18-img-1013-arvore-no-poligono-da-ufv.jpg",
+     "th": "thumbs/agrestina/18-img-1013-arvore-no-poligono-da-ufv.jpg",
+     "legenda": "Árvore no polígono da UFV",
+     "hora": "13:26",
+     "gps": [
+      -8.473133,
+      -35.916747
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 19,
+     "arq": "fotos/agrestina/19-img-1014-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/19-img-1014-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:32",
+     "gps": [
+      -8.472519,
+      -35.917286
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 20,
+     "arq": "fotos/agrestina/20-img-1017-presenca-de-rocha-aflorada-e-saida-de-dre.jpg",
+     "th": "thumbs/agrestina/20-img-1017-presenca-de-rocha-aflorada-e-saida-de-dre.jpg",
+     "legenda": "Presença de rocha aflorada e saída de drenagem natural",
+     "hora": "13:36",
+     "gps": [
+      -8.472286,
+      -35.916083
+     ],
+     "cats": [
+      "drenagem",
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 21,
+     "arq": "fotos/agrestina/21-img-1021-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/21-img-1021-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:39",
+     "gps": [
+      -8.471975,
+      -35.915589
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 22,
+     "arq": "fotos/agrestina/22-img-1022-arvores-no-poligono-da-ufv.jpg",
+     "th": "thumbs/agrestina/22-img-1022-arvores-no-poligono-da-ufv.jpg",
+     "legenda": "Árvores no polígono da UFV",
+     "hora": "13:39",
+     "gps": [
+      -8.472053,
+      -35.915428
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 23,
+     "arq": "fotos/agrestina/23-img-1029-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/23-img-1029-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:50",
+     "gps": [
+      -8.473333,
+      -35.916367
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 24,
+     "arq": "fotos/agrestina/24-img-1031-buraco-de-tatu.jpg",
+     "th": "thumbs/agrestina/24-img-1031-buraco-de-tatu.jpg",
+     "legenda": "Buraco de tatu",
+     "hora": "13:53",
+     "gps": [
+      -8.473956,
+      -35.916592
+     ],
+     "cats": [
+      "outros"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 25,
+     "arq": "fotos/agrestina/25-img-1034-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/25-img-1034-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:56",
+     "gps": [
+      -8.473644,
+      -35.917419
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 26,
+     "arq": "fotos/agrestina/26-img-1036-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/26-img-1036-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "13:59",
+     "gps": [
+      -8.47385,
+      -35.918097
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 27,
+     "arq": "fotos/agrestina/27-img-1037-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/27-img-1037-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "14:03",
+     "gps": [
+      -8.473967,
+      -35.918203
+     ],
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 28,
+     "arq": "fotos/agrestina/28-img-1040-presenca-de-rocha-aflorada.jpg",
+     "th": "thumbs/agrestina/28-img-1040-presenca-de-rocha-aflorada.jpg",
+     "legenda": "Presença de rocha aflorada",
+     "hora": "14:05",
+     "gps": null,
+     "cats": [
+      "rochas"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 29,
+     "arq": "fotos/agrestina/29-img-1042-ponto-de-conexao-ufv.jpg",
+     "th": "thumbs/agrestina/29-img-1042-ponto-de-conexao-ufv.jpg",
+     "legenda": "Ponto de Conexão UFV",
+     "hora": "14:07",
+     "gps": [
+      -8.474906,
+      -35.919614
+     ],
+     "cats": [
+      "conexao"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 30,
+     "arq": "fotos/agrestina/30-img-1044-rede-que-passa-margeando-o-terreno.jpg",
+     "th": "thumbs/agrestina/30-img-1044-rede-que-passa-margeando-o-terreno.jpg",
+     "legenda": "Rede que passa margeando o terreno",
+     "hora": "14:07",
+     "gps": [
+      -8.4749,
+      -35.919739
+     ],
+     "cats": [
+      "conexao"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 31,
+     "arq": "fotos/agrestina/31-img-1046-passagem-manilhada-que-joga-agua-no-acude.jpg",
+     "th": "thumbs/agrestina/31-img-1046-passagem-manilhada-que-joga-agua-no-acude.jpg",
+     "legenda": "Passagem manilhada que joga água no açude",
+     "hora": "14:12",
+     "gps": [
+      -8.475256,
+      -35.919247
+     ],
+     "cats": [
+      "drenagem"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 32,
+     "arq": "fotos/agrestina/32-timephoto-20261104-131608-geral-poligono-ufv-acude.jpg",
+     "th": "thumbs/agrestina/32-timephoto-20261104-131608-geral-poligono-ufv-acude.jpg",
+     "legenda": "Polígono UFV + açude",
+     "hora": "13:16",
+     "gps": [
+      -8.47527,
+      -35.91804
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "TimePhoto",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 33,
+     "arq": "fotos/agrestina/33-timephoto-20261104-131650-geral-poligono-ufv-acude.jpg",
+     "th": "thumbs/agrestina/33-timephoto-20261104-131650-geral-poligono-ufv-acude.jpg",
+     "legenda": "Polígono UFV + açude",
+     "hora": "13:16",
+     "gps": [
+      -8.474954,
+      -35.918019
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "TimePhoto",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 34,
+     "arq": "fotos/agrestina/34-timephoto-20261104-132151-geral-caimento-poligono-.jpg",
+     "th": "thumbs/agrestina/34-timephoto-20261104-132151-geral-caimento-poligono-.jpg",
+     "legenda": "Caimento polígono até saída drenagem natural",
+     "hora": "13:21",
+     "gps": [
+      -8.474076,
+      -35.916996
+     ],
+     "cats": [
+      "geral",
+      "drenagem"
+     ],
+     "origem": "TimePhoto",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 35,
+     "arq": "fotos/agrestina/35-timephoto-20261104-140750-geral-poligono-ufv-ufv-v.jpg",
+     "th": "thumbs/agrestina/35-timephoto-20261104-140750-geral-poligono-ufv-ufv-v.jpg",
+     "legenda": "Polígono UFV + UFV vizinha ao fundo",
+     "hora": "14:07",
+     "gps": [
+      -8.474454,
+      -35.919658
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "TimePhoto",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 36,
+     "arq": "fotos/agrestina/36-dji-fly-rodovia-e-usinas-vizinhas.jpg",
+     "th": "thumbs/agrestina/36-dji-fly-rodovia-e-usinas-vizinhas.jpg",
+     "legenda": "Rodovia e usinas vizinhas",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 37,
+     "arq": "fotos/agrestina/37-dji-fly-usinas-vizinhas.jpg",
+     "th": "thumbs/agrestina/37-dji-fly-usinas-vizinhas.jpg",
+     "legenda": "Usinas vizinhas",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 38,
+     "arq": "fotos/agrestina/38-dji-fly-visao-geral-terreno-acude.jpg",
+     "th": "thumbs/agrestina/38-dji-fly-visao-geral-terreno-acude.jpg",
+     "legenda": "Visão geral terreno (açude)",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral",
+      "drenagem"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 39,
+     "arq": "fotos/agrestina/39-dji-fly-visao-geral-terreno-acude-rochas-e-arvores.jpg",
+     "th": "thumbs/agrestina/39-dji-fly-visao-geral-terreno-acude-rochas-e-arvores.jpg",
+     "legenda": "Visão geral terreno (açude, rochas e árvores)",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral",
+      "rochas",
+      "vegetacao"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 40,
+     "arq": "fotos/agrestina/40-dji-fly-visao-geral-terreno-acude-rochas-e-arvores.jpg",
+     "th": "thumbs/agrestina/40-dji-fly-visao-geral-terreno-acude-rochas-e-arvores.jpg",
+     "legenda": "Visão geral terreno (açude, rochas e árvores)",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral",
+      "rochas",
+      "vegetacao"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 41,
+     "arq": "fotos/agrestina/41-dji-fly-visao-geral-terreno-sentido-norte.jpg",
+     "th": "thumbs/agrestina/41-dji-fly-visao-geral-terreno-sentido-norte.jpg",
+     "legenda": "Visão geral terreno (sentido norte)",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    }
+   ],
+   "rotulos": [
+    {
+     "id": 29,
+     "t": "Ponto de conexão",
+     "dx": -16,
+     "dy": -14
+    },
+    {
+     "id": 31,
+     "t": "Passagem manilhada",
+     "dx": -16,
+     "dy": 22
+    },
+    {
+     "id": 4,
+     "t": "Margem da PE-120",
+     "dx": 16,
+     "dy": 4
+    }
+   ]
+  },
+  {
+   "id": "bom-conselho",
+   "nome": "UFV Bom Conselho",
+   "local": "Bom Conselho/PE",
+   "endereco": "Zona rural, 6 km do centro",
+   "data": "2026-11-05",
+   "tipo": "Visita técnica de terreno",
+   "participantes": [
+    {
+     "n": "Felipe Alves",
+     "a": "Engenharia"
+    },
+    {
+     "n": "Bruna Nahla",
+     "a": "Construção"
+    },
+    {
+     "n": "Ricardo Carelli",
+     "a": "Desenvolvimento"
+    }
+   ],
+   "capa": 14,
+   "centro": [
+    -9.1542,
+    -36.7329
+   ],
+   "poligonos": [
+    {
+     "nome": "Área locada unificada",
+     "tipo": "lic",
+     "cor": "#EC6726",
+     "area": 11.94,
+     "pts": [
+      [
+       -9.1532435,
+       -36.7348425
+      ],
+      [
+       -9.1531382,
+       -36.7342001
+      ],
+      [
+       -9.1531297,
+       -36.7341473
+      ],
+      [
+       -9.1531173,
+       -36.7340512
+      ],
+      [
+       -9.1530749,
+       -36.7337293
+      ],
+      [
+       -9.1530597,
+       -36.7335952
+      ],
+      [
+       -9.1530404,
+       -36.7334955
+      ],
+      [
+       -9.152983,
+       -36.7331526
+      ],
+      [
+       -9.1528374,
+       -36.7322754
+      ],
+      [
+       -9.1526458,
+       -36.7311366
+      ],
+      [
+       -9.1526191,
+       -36.7309788
+      ],
+      [
+       -9.1548777,
+       -36.7308573
+      ],
+      [
+       -9.1553301,
+       -36.7311514
+      ],
+      [
+       -9.155759,
+       -36.7345234
+      ],
+      [
+       -9.1532435,
+       -36.7348425
+      ]
+     ]
+    }
+   ],
+   "satelite": {
+    "img": "sat/bom-conselho.jpg",
+    "x0": 26706305,
+    "y0": 35267720,
+    "w": 1255,
+    "h": 966,
+    "attrib": "Esri World Imagery (Esri, Maxar, Earthstar Geographics)"
+   },
+   "rotulos": [
+    {
+     "id": 4,
+     "t": "Cerca da propriedade vizinha",
+     "dx": 16,
+     "dy": 4
+    },
+    {
+     "id": 20,
+     "t": "Monte a terraplenar",
+     "dx": 16,
+     "dy": 4
+    }
+   ],
+   "parecer": {
+    "nivel": "viavel",
+    "titulo": "Viável",
+    "texto": "Área favorável: sem rocha aflorante, relevo suave para drenagem, região segura e supressão já em andamento. Pontos de atenção: acesso de carretas, realocação do acesso interno e investigação do solo arenoso."
+   },
+   "kpis": [
+    {
+     "v": "~11,9 ha",
+     "l": "de área locada (KML)"
+    },
+    {
+     "v": "6 km",
+     "l": "do centro de Bom Conselho (44 mil hab.)"
+    },
+    {
+     "v": "48 km",
+     "l": "de Garanhuns (140 mil hab.)"
+    },
+    {
+     "v": "Mar–Jul",
+     "l": "período chuvoso da região"
+    }
+   ],
+   "regiao": {
+    "itens": [
+     {
+      "k": "Bioma",
+      "v": "Caatinga, em transição com a Mata Atlântica (Agreste Meridional)"
+     },
+     {
+      "k": "Vegetação no local",
+      "v": "Pastagem com árvores esparsas, já em supressão"
+     },
+     {
+      "k": "Relevo e solo",
+      "v": "Suave, com caimento oeste → leste; solo arenoso, sem rocha aflorante"
+     },
+     {
+      "k": "Clima",
+      "v": "Tropical com estação seca, transição para o semiárido"
+     },
+     {
+      "k": "Chuva média anual",
+      "v": "≈ 530 mm"
+     },
+     {
+      "k": "Período chuvoso",
+      "v": "Março a julho · seco de agosto a fevereiro"
+     }
+    ],
+    "chuva": [
+     41,
+     42,
+     53,
+     67,
+     67,
+     64,
+     64,
+     44,
+     29,
+     22,
+     19,
+     21
+    ],
+    "obs": "Solo arenoso e chuvas concentradas de mar–jul: planejar terraplenagem e drenagem na janela seca (ago–fev) e prever controle de erosão nas vias de terra.",
+    "fontes": [
+     {
+      "t": "Chuva mensal: Climatempo — climatologia de Bom Conselho (médias de 30 anos)",
+      "u": "https://www.climatempo.com.br/climatologia/1247/bomconselho-br"
+     },
+     {
+      "t": "Período chuvoso (mar–jul) no Agreste: Rodrigues, L. O. — dissertação UFPE, dados APAC 1963–2016",
+      "u": "https://repositorio.ufpe.br/bitstream/123456789/31855/1/DISSERTA%c3%87%c3%83O%20Luana%20de%20Oliveira%20Rodrigues.pdf"
+     },
+     {
+      "t": "Bioma e população: IBGE, via perfil municipal de Bom Conselho",
+      "u": "https://cepsbrasil.com.br/pe/bom-conselho/ibge"
+     }
+    ]
+   },
+   "destaques": [
+    {
+     "t": "pos",
+     "x": "Sem rocha aflorante e relevo suave (oeste → leste), favorável à drenagem."
+    },
+    {
+     "t": "pos",
+     "x": "Região considerada segura, segundo o proprietário."
+    },
+    {
+     "t": "pos",
+     "x": "Supressão da vegetação já em andamento na data da visita."
+    },
+    {
+     "t": "neg",
+     "x": "Mata-burro e curva fechada no acesso principal podem dificultar a entrada de carretas."
+    },
+    {
+     "t": "neg",
+     "x": "Solo arenoso com muitos formigueiros e tocas de tatu: investigação geotécnica necessária."
+    }
+   ],
+   "checklist": [
+    {
+     "n": 1,
+     "item": "Ponto de conexão",
+     "st": "ok",
+     "campo": "Área favorável, sem interferências.",
+     "impl": "Sem obstáculo físico identificado para a conexão.",
+     "fotos": []
+    },
+    {
+     "n": 2,
+     "item": "Acesso pela via principal",
+     "st": "atencao",
+     "campo": "6 km da cidade, sendo 5 km por estrada de terra em boas condições. Próximo ao terreno, no acesso principal, há uma passagem em mata-burro com curva fechada que pode dificultar o acesso de carretas.",
+     "impl": "Verificar raio de giro e capacidade do mata-burro para carretas; prever alargamento da curva, reforço ou desvio antes da logística de módulos e estruturas.",
+     "fotos": [
+      7
+     ]
+    },
+    {
+     "n": 3,
+     "item": "Limites, cercas, marcos e confrontantes",
+     "st": "ok",
+     "campo": "Cerca de divisa de propriedade na faixa norte. Acesso pela cerca da face leste (mais distante do polígono).",
+     "impl": "Limites definidos. Considerar a entrada da UFV pela face leste no layout.",
+     "fotos": [
+      4
+     ]
+    },
+    {
+     "n": 4,
+     "item": "Ocupações, benfeitorias e edificações",
+     "st": "ok",
+     "campo": "Sem redes próximas ao polígono. Edificações a cerca de 170 m do cercamento da UFV, com possibilidade de fornecimento de água e energia pela família do proprietário.",
+     "impl": "Apoio ao canteiro (água e energia) pode ser negociado com o proprietário.",
+     "fotos": [
+      18,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "item": "Áreas alagáveis, erosões, taludes e drenagens",
+     "st": "ok",
+     "campo": "Sem pontos de alagamento ou erosões. Inclinação favorável e suave no sentido oeste → leste para os sistemas de drenagem.",
+     "impl": "Favorece drenagem superficial simples, orientada no sentido oeste → leste.",
+     "fotos": [
+      15,
+      18
+     ]
+    },
+    {
+     "n": 6,
+     "item": "Poste ou rede estruturada mais próxima",
+     "st": "atencao",
+     "campo": "A rede mais próxima é a que chega nas edificações, a cerca de 170 m do polígono.",
+     "impl": "Confirmar com a distribuidora o ponto de conexão e a extensão de rede necessária.",
+     "fotos": [
+      18
+     ]
+    },
+    {
+     "n": 7,
+     "item": "Outras cargas, consumidores ou geradores próximos",
+     "st": "ok",
+     "campo": "Não possui.",
+     "impl": "",
+     "fotos": []
+    },
+    {
+     "n": 8,
+     "item": "Faixa de servidão, autorização de passagem ou negociação fundiária",
+     "st": "atencao",
+     "campo": "Conforme o proprietário, será necessário realocar um acesso que passa dentro do polígono da UFV. Já foi alinhada uma área de servidão entre a cerca da outra propriedade e o polígono, na face norte.",
+     "impl": "Formalizar a servidão e a realocação do acesso antes da obra; considerar a faixa no layout.",
+     "fotos": [
+      4,
+      22,
+      26
+     ]
+    },
+    {
+     "n": 9,
+     "item": "Cruzamentos (rodovias, ferrovias, rios, adutoras, gasodutos)",
+     "st": "ok",
+     "campo": "Não há. Apenas a travessia do mata-burro no acesso principal.",
+     "impl": "",
+     "fotos": [
+      7
+     ]
+    },
+    {
+     "n": 10,
+     "item": "Interferências para sombreamento",
+     "st": "ok",
+     "campo": "Não foram identificados indivíduos que gerem sombra.",
+     "impl": "Sem perda relevante por sombreamento externo.",
+     "fotos": [
+      21,
+      23,
+      25
+     ]
+    },
+    {
+     "n": 11,
+     "item": "Vegetação, árvores, APP, poda e supressão",
+     "st": "atencao",
+     "campo": "Dezenas de indivíduos arbóreos, que já estavam em fase de supressão na data da visita.",
+     "impl": "Confirmar a autorização de supressão vigente e a destinação das leiras antes da mobilização.",
+     "fotos": [
+      11,
+      12,
+      13,
+      1,
+      2,
+      3,
+      28
+     ]
+    },
+    {
+     "n": 12,
+     "item": "Solo",
+     "st": "atencao",
+     "campo": "Sem rochas aflorando no terreno. Solo arenoso. Presença de muitos formigueiros e buracos de tatu. Necessidade de investigação geotécnica para entender as camadas inferiores.",
+     "impl": "Solo arenoso tende a favorecer a cravação, mas exige verificar resistência ao arrancamento e erosão. Formigueiros e tocas precisam de tratamento antes da terraplenagem.",
+     "fotos": [
+      10,
+      5,
+      6,
+      9,
+      8,
+      20
+     ]
+    },
+    {
+     "n": 13,
+     "item": "Segurança",
+     "st": "ok",
+     "campo": "Segundo o proprietário, é uma região bem segura. Roubos de gado, comuns em outras regiões, não acontecem em Bom Conselho por proteção da própria população.",
+     "impl": "Manter o padrão de segurança da UFV (cercamento e CFTV).",
+     "fotos": []
+    },
+    {
+     "n": 14,
+     "item": "Localização",
+     "st": "ok",
+     "campo": "Polígono a 6 km do centro de Bom Conselho (44.000 hab.) e a 48 km de Garanhuns (140.000 hab.).",
+     "impl": "Apoio logístico e mão de obra em Garanhuns.",
+     "fotos": [
+      14,
+      17
+     ]
+    }
+   ],
+   "passos": [
+    {
+     "p": "Alta",
+     "x": "Investigação geotécnica: sondagens e ensaios de arrancamento (pull-out) para caracterizar o solo arenoso e definir a fundação."
+    },
+    {
+     "p": "Alta",
+     "x": "Vistoria de rota para carretas: definir adequação do mata-burro e da curva fechada (alargamento, reforço ou desvio)."
+    },
+    {
+     "p": "Alta",
+     "x": "Formalizar a servidão na face norte e a realocação do acesso que cruza o polígono."
+    },
+    {
+     "p": "Média",
+     "x": "Levantamento topográfico planialtimétrico (drone/RTK), incluindo o monte a terraplenar."
+    },
+    {
+     "p": "Média",
+     "x": "Confirmar ponto de conexão e extensão de rede com a distribuidora (rede mais próxima a ~170 m)."
+    },
+    {
+     "p": "Média",
+     "x": "Controle de formigueiros e preenchimento das tocas de tatu antes da terraplenagem."
+    },
+    {
+     "p": "Média",
+     "x": "Acompanhar a conclusão da supressão e a destinação das leiras."
+    },
+    {
+     "p": "Baixa",
+     "x": "Formalizar com o proprietário o fornecimento de água e energia para o canteiro."
+    }
+   ],
+   "fotos": [
+    {
+     "id": 1,
+     "arq": "fotos/bom-conselho/01-aleiras-da-supressao-que-esta-sendo-realizada-2.jpg",
+     "th": "thumbs/bom-conselho/01-aleiras-da-supressao-que-esta-sendo-realizada-2.jpg",
+     "legenda": "Leiras da supressão em andamento",
+     "hora": "10:13",
+     "gps": [
+      -9.153215,
+      -36.732349
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 2,
+     "arq": "fotos/bom-conselho/02-aleiras-da-supressao-que-esta-sendo-realizada-3.jpg",
+     "th": "thumbs/bom-conselho/02-aleiras-da-supressao-que-esta-sendo-realizada-3.jpg",
+     "legenda": "Leiras da supressão em andamento",
+     "hora": "10:21",
+     "gps": [
+      -9.154331,
+      -36.731732
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 3,
+     "arq": "fotos/bom-conselho/03-aleiras-da-supressao-que-esta-sendo-realizada.jpg",
+     "th": "thumbs/bom-conselho/03-aleiras-da-supressao-que-esta-sendo-realizada.jpg",
+     "legenda": "Leiras da supressão em andamento",
+     "hora": "10:13",
+     "gps": [
+      -9.153017,
+      -36.732623
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 4,
+     "arq": "fotos/bom-conselho/04-cercamento-da-propriedade-vizinha.jpg",
+     "th": "thumbs/bom-conselho/04-cercamento-da-propriedade-vizinha.jpg",
+     "legenda": "Cercamento da propriedade vizinha",
+     "hora": "10:16",
+     "gps": [
+      -9.152854,
+      -36.731096
+     ],
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 5,
+     "arq": "fotos/bom-conselho/05-formigueiro-2.jpg",
+     "th": "thumbs/bom-conselho/05-formigueiro-2.jpg",
+     "legenda": "Formigueiro",
+     "hora": "10:07",
+     "gps": [
+      -9.153994,
+      -36.734336
+     ],
+     "cats": [
+      "solo"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 6,
+     "arq": "fotos/bom-conselho/06-formigueiro.jpg",
+     "th": "thumbs/bom-conselho/06-formigueiro.jpg",
+     "legenda": "Formigueiro",
+     "hora": "10:04",
+     "gps": [
+      -9.154958,
+      -36.734031
+     ],
+     "cats": [
+      "solo"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 7,
+     "arq": "fotos/bom-conselho/07-mata-burro-no-acesso-principal-e-curva-fechada-par.jpg",
+     "th": "thumbs/bom-conselho/07-mata-burro-no-acesso-principal-e-curva-fechada-par.jpg",
+     "legenda": "Mata-burro no acesso principal e curva fechada para carretas",
+     "hora": "09:22",
+     "gps": null,
+     "cats": [
+      "entorno"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 8,
+     "arq": "fotos/bom-conselho/08-presenca-de-buraco-de-tatu.jpg",
+     "th": "thumbs/bom-conselho/08-presenca-de-buraco-de-tatu.jpg",
+     "legenda": "Presença de buraco de tatu",
+     "hora": "09:51",
+     "gps": [
+      -9.152803,
+      -36.731678
+     ],
+     "cats": [
+      "solo"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 9,
+     "arq": "fotos/bom-conselho/09-presenca-de-formigueiro.jpg",
+     "th": "thumbs/bom-conselho/09-presenca-de-formigueiro.jpg",
+     "legenda": "Presença de formigueiro",
+     "hora": "10:17",
+     "gps": [
+      -9.153143,
+      -36.73104
+     ],
+     "cats": [
+      "solo"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 10,
+     "arq": "fotos/bom-conselho/10-solo-arenoso.jpg",
+     "th": "thumbs/bom-conselho/10-solo-arenoso.jpg",
+     "legenda": "Solo arenoso",
+     "hora": "09:48",
+     "gps": [
+      -9.153369,
+      -36.732764
+     ],
+     "cats": [
+      "solo"
+     ],
+     "origem": "Campo",
+     "w": 1350,
+     "h": 1800
+    },
+    {
+     "id": 11,
+     "arq": "fotos/bom-conselho/11-supressao-2.jpg",
+     "th": "thumbs/bom-conselho/11-supressao-2.jpg",
+     "legenda": "Supressão 2",
+     "hora": "10:22",
+     "gps": [
+      -9.154425,
+      -36.732241
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 12,
+     "arq": "fotos/bom-conselho/12-supressao-3.jpg",
+     "th": "thumbs/bom-conselho/12-supressao-3.jpg",
+     "legenda": "Supressão 3",
+     "hora": "10:24",
+     "gps": [
+      -9.15482,
+      -36.733185
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 13,
+     "arq": "fotos/bom-conselho/13-supressao.jpg",
+     "th": "thumbs/bom-conselho/13-supressao.jpg",
+     "legenda": "Supressão",
+     "hora": "10:22",
+     "gps": [
+      -9.154451,
+      -36.732032
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 14,
+     "arq": "fotos/bom-conselho/14-visao-sudoeste-nordeste-2.jpg",
+     "th": "thumbs/bom-conselho/14-visao-sudoeste-nordeste-2.jpg",
+     "legenda": "Visão sudoeste → nordeste (2)",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 15,
+     "arq": "fotos/bom-conselho/15-visao-area-leste-oeste.jpg",
+     "th": "thumbs/bom-conselho/15-visao-area-leste-oeste.jpg",
+     "legenda": "Visão leste → oeste",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral",
+      "drenagem"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 16,
+     "arq": "fotos/bom-conselho/16-visao-area-nordeste-sul.jpg",
+     "th": "thumbs/bom-conselho/16-visao-area-nordeste-sul.jpg",
+     "legenda": "Visão nordeste → sul",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 17,
+     "arq": "fotos/bom-conselho/17-visao-area-norte-sudoeste.jpg",
+     "th": "thumbs/bom-conselho/17-visao-area-norte-sudoeste.jpg",
+     "legenda": "Visão norte → sudoeste",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 18,
+     "arq": "fotos/bom-conselho/18-visao-area-oeste-leste.jpg",
+     "th": "thumbs/bom-conselho/18-visao-area-oeste-leste.jpg",
+     "legenda": "Visão oeste → leste",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral",
+      "drenagem"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 19,
+     "arq": "fotos/bom-conselho/19-visao-area-sudoeste-nordeste.jpg",
+     "th": "thumbs/bom-conselho/19-visao-area-sudoeste-nordeste.jpg",
+     "legenda": "Visão sudoeste → nordeste",
+     "hora": "",
+     "gps": null,
+     "cats": [
+      "geral"
+     ],
+     "origem": "Drone",
+     "w": 960,
+     "h": 720
+    },
+    {
+     "id": 20,
+     "arq": "fotos/bom-conselho/20-area-ufv-monte-para-terraplanar.jpg",
+     "th": "thumbs/bom-conselho/20-area-ufv-monte-para-terraplanar.jpg",
+     "legenda": "Área UFV — monte a terraplenar",
+     "hora": "10:20",
+     "gps": [
+      -9.154401,
+      -36.731377
+     ],
+     "cats": [
+      "solo"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 21,
+     "arq": "fotos/bom-conselho/21-area-ufv-1.jpg",
+     "th": "thumbs/bom-conselho/21-area-ufv-1.jpg",
+     "legenda": "Área UFV 1",
+     "hora": "09:59",
+     "gps": [
+      -9.15499,
+      -36.734457
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 22,
+     "arq": "fotos/bom-conselho/22-area-ufv-2.jpg",
+     "th": "thumbs/bom-conselho/22-area-ufv-2.jpg",
+     "legenda": "Área UFV 2",
+     "hora": "09:59",
+     "gps": [
+      -9.154981,
+      -36.734457
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 23,
+     "arq": "fotos/bom-conselho/23-area-ufv-3.jpg",
+     "th": "thumbs/bom-conselho/23-area-ufv-3.jpg",
+     "legenda": "Área UFV 3",
+     "hora": "09:59",
+     "gps": [
+      -9.154999,
+      -36.734457
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 24,
+     "arq": "fotos/bom-conselho/24-area-ufv-4.jpg",
+     "th": "thumbs/bom-conselho/24-area-ufv-4.jpg",
+     "legenda": "Área UFV 4",
+     "hora": "10:03",
+     "gps": [
+      -9.153354,
+      -36.734422
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 25,
+     "arq": "fotos/bom-conselho/25-area-ufv-5.jpg",
+     "th": "thumbs/bom-conselho/25-area-ufv-5.jpg",
+     "legenda": "Área UFV 5",
+     "hora": "10:03",
+     "gps": [
+      -9.153363,
+      -36.734422
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 26,
+     "arq": "fotos/bom-conselho/26-area-ufv-6.jpg",
+     "th": "thumbs/bom-conselho/26-area-ufv-6.jpg",
+     "legenda": "Área UFV 6",
+     "hora": "10:06",
+     "gps": [
+      -9.153204,
+      -36.73355
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 27,
+     "arq": "fotos/bom-conselho/27-area-ufv-7.jpg",
+     "th": "thumbs/bom-conselho/27-area-ufv-7.jpg",
+     "legenda": "Área UFV 7",
+     "hora": "10:13",
+     "gps": [
+      -9.153215,
+      -36.732349
+     ],
+     "cats": [
+      "geral"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    },
+    {
+     "id": 28,
+     "arq": "fotos/bom-conselho/28-area-ufv-para-rocagem.jpg",
+     "th": "thumbs/bom-conselho/28-area-ufv-para-rocagem.jpg",
+     "legenda": "Área UFV para roçagem",
+     "hora": "10:20",
+     "gps": [
+      -9.154328,
+      -36.731132
+     ],
+     "cats": [
+      "vegetacao"
+     ],
+     "origem": "Campo",
+     "w": 1800,
+     "h": 1350
+    }
+   ]
+  }
+ ]
+}

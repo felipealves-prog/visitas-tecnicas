@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Visitas Técnicas — Engenharia de Projetos SolarGrid</title>
+<link rel="icon" href="sg.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --aurora:#EC6726;--aurora-50:#FDF0E9;--eclipse:#000;--orion:#151B21;--nebulosa:#CBD6D7;--sirius:#F3F3F3;--branco:#fff;
+  --icaro:#183356;--icaro-50:#E8EDF3;--vega:#F33C13;--vega-50:#FDE7E2;
+  --g95:#2E2D2D;--g85:#4A4A49;--g65:#7C7C7B;--g45:#A8A8A7;
+  --r:14px;--shadow:0 1px 2px rgba(0,0,0,.04),0 6px 20px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,system-ui,sans-serif;background:var(--sirius);color:var(--eclipse);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+/* Top bar */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--nebulosa)}
+.top .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.top img.logo{height:24px;width:auto;cursor:pointer}
+.top .sep{width:1px;height:24px;background:var(--nebulosa)}
+.top .area{font-weight:500;font-size:13px;color:var(--g85);letter-spacing:.02em}
+.top .crumb{margin-left:auto;display:flex;gap:8px;align-items:center;font-size:13px;color:var(--g65)}
+.top .crumb button{background:none;border:0;color:var(--g85);padding:6px 10px;border-radius:8px;font-weight:500}
+.top .crumb button:hover{background:var(--sirius);color:var(--aurora)}
+
+/* Home */
+.hero-home{padding:56px 0 28px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--aurora)}
+h1.big{font-weight:300;font-size:clamp(34px,5vw,56px);line-height:1.08;margin:10px 0 14px;letter-spacing:-.01em}
+h1.big b{font-weight:600}
+.lead{font-size:17px;color:var(--g85);max-width:720px;margin:0}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:32px 0 20px}
+.search{flex:1 1 280px;display:flex;align-items:center;gap:10px;background:var(--branco);border:1px solid var(--nebulosa);border-radius:999px;padding:0 16px;height:46px}
+.search input{border:0;outline:0;flex:1;font:inherit;background:none}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--nebulosa);background:var(--branco);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:500;color:var(--g85);display:inline-flex;gap:8px;align-items:center}
+.chip .n{font-size:11px;color:var(--g65);font-weight:600}
+.chip.on{background:var(--eclipse);border-color:var(--eclipse);color:#fff}
+.chip.on .n{color:var(--nebulosa)}
+.grid-v{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:22px;padding-bottom:64px}
+.vcard{background:var(--branco);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;border:0;text-align:left;padding:0;color:inherit}
+.vcard:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.vcard .ph{position:relative;aspect-ratio:16/9;background:var(--nebulosa)}
+.vcard .ph img{width:100%;height:100%;object-fit:cover}
+.vcard .ph .tag{position:absolute;left:14px;top:14px}
+.vcard .ph .count{position:absolute;right:14px;bottom:14px;background:rgba(0,0,0,.72);color:#fff;font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px}
+.vcard .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.vcard h3{margin:0;font-size:20px;font-weight:600}
+.vcard .meta{font-size:13px;color:var(--g65);display:flex;gap:14px;flex-wrap:wrap}
+.vcard .bars{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.vcard .bars span{white-space:nowrap;font-size:12px;font-weight:600;padding:4px 9px;border-radius:6px}
+.empty{padding:60px 0;text-align:center;color:var(--g65)}
+
+/* Badges */
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;white-space:nowrap}
+.b-ressalvas{background:var(--aurora);color:#fff}
+.b-viavel{background:var(--icaro);color:#fff}
+.b-inviavel{background:var(--vega);color:#fff}
+.st-ok{background:var(--icaro-50);color:var(--icaro)}
+.st-atencao{background:var(--aurora-50);color:#B5470F}
+.st-critico{background:var(--vega);color:#fff}
+.st-pendente{background:var(--sirius);color:var(--g85);border:1px dashed var(--g45)}
+
+/* Visit hero */
+.vhero{position:relative;min-height:440px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--orion)}
+.vhero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vhero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.82) 100%)}
+.vhero .wrap{position:relative;z-index:2;width:100%;padding-bottom:34px;padding-top:80px}
+.vhero .eyebrow{color:#fff;opacity:.85}
+.vhero h1{font-weight:300;font-size:clamp(38px,6vw,68px);margin:6px 0 12px;line-height:1.02}
+.vhero h1 b{font-weight:600}
+.vhero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:14px}
+.vhero .meta span{background:rgba(255,255,255,.14);backdrop-filter:blur(6px);padding:7px 12px;border-radius:999px;font-weight:500}
+.vhero .meta a{background:var(--aurora);padding:7px 14px;border-radius:999px;font-weight:600;text-decoration:none}
+.vhero .meta a:hover{background:var(--vega)}
+
+/* Sub nav */
+.subnav{position:sticky;top:64px;z-index:30;background:var(--sirius);border-bottom:1px solid var(--nebulosa)}
+.subnav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.subnav button{background:none;border:0;padding:14px 14px;font-size:13px;font-weight:600;color:var(--g65);border-bottom:2px solid transparent;white-space:nowrap}
+.subnav button:hover,.subnav button.on{color:var(--eclipse);border-bottom-color:var(--aurora)}
+
+section.blk{padding:44px 0 8px;scroll-margin-top:120px}
+h2.sec{font-size:26px;font-weight:600;margin:0 0 6px;letter-spacing:-.005em}
+.sec-sub{color:var(--g65);margin:0 0 22px;font-size:14px}
+
+/* Summary */
+.sum{display:grid;grid-template-columns:1.05fr 1fr;gap:22px}
+.verdict{background:var(--eclipse);color:#fff;border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.verdict:after{content:"";position:absolute;right:-60px;top:-60px;width:170px;height:170px;border-radius:50%;background:var(--aurora);opacity:.9}
+.verdict .lbl{position:relative;z-index:1;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--nebulosa);font-weight:600}
+.verdict .v{max-width:80%;font-size:30px;font-weight:600;color:var(--aurora);line-height:1.1;position:relative;z-index:1}
+.verdict p{margin:0;color:#E4E9EA;position:relative;z-index:1;max-width:92%}
+.score{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;position:relative;z-index:1;margin-top:auto}
+.score div{background:rgba(255,255,255,.08);border-radius:10px;padding:10px 12px}
+.score b{display:block;font-size:26px;font-weight:600;line-height:1.1}
+.score small{font-size:11px;color:var(--nebulosa);font-weight:500}
+.keys{background:var(--branco);border-radius:var(--r);padding:24px 26px;box-shadow:var(--shadow)}
+.keys h4{margin:0 0 12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--g65)}
+.keys ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.keys li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.keys li i{flex:0 0 24px;height:24px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:13px;margin-top:1px}
+.keys li.pos i{background:var(--icaro-50);color:var(--icaro)}
+.keys li.neg i{background:var(--vega-50);color:var(--vega)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px}
+.kpi{background:var(--branco);border-radius:var(--r);padding:18px 20px;box-shadow:var(--shadow)}
+.kpi b{display:block;font-size:30px;font-weight:600;color:var(--aurora);line-height:1.1}
+.kpi span{font-size:13px;color:var(--g85);font-weight:500}
+
+/* Checklist */
+.ck-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.ck{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.citem{background:var(--branco);border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px;display:flex;flex-direction:column;gap:12px;border-left:4px solid var(--nebulosa)}
+.citem.ok{border-left-color:var(--icaro)}
+.citem.atencao{border-left-color:var(--aurora)}
+.citem.critico{border-left-color:var(--vega)}
+.citem.pendente{border-left-color:var(--g45);border-left-style:dashed}
+.citem .hd{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.citem .hd h3{margin:0;font-size:16px;font-weight:600;line-height:1.3}
+.citem .hd h3 small{display:block;color:var(--g45);font-size:12px;font-weight:600;letter-spacing:.06em;margin-bottom:2px}
+.citem .fld{font-size:14px;color:var(--g95)}
+.citem .impl{font-size:13.5px;background:var(--sirius);border-radius:10px;padding:10px 12px;color:var(--g85)}
+.citem .impl b{color:var(--eclipse);font-weight:600}
+.citem .thumbs{display:flex;gap:6px;flex-wrap:wrap}
+.citem .thumbs button{border:0;padding:0;border-radius:8px;overflow:hidden;width:72px;height:54px;background:var(--nebulosa)}
+.citem .thumbs img{width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.citem .thumbs button:hover img{transform:scale(1.08)}
+
+/* Next steps */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.step{display:flex;gap:14px;align-items:flex-start;background:var(--branco);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.step .num{flex:0 0 30px;height:30px;border-radius:50%;background:var(--eclipse);color:#fff;font-weight:600;display:grid;place-items:center;font-size:13px}
+.step .pr{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:5px;margin-bottom:4px;display:inline-block}
+.pr-Alta{background:var(--vega-50);color:var(--vega)}
+.pr-Média{background:var(--aurora-50);color:#B5470F}
+.pr-Baixa{background:var(--icaro-50);color:var(--icaro)}
+.step p{margin:0;font-size:14px}
+
+/* Map */
+.mapbox{display:grid;grid-template-columns:1fr 290px;gap:18px}
+.map{background:var(--branco);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;position:relative}
+.map svg{width:100%;height:auto;display:block}
+.map .pin{cursor:pointer}
+.map .pin circle{transition:r .15s}
+.map .pin:hover circle.dot{r:11}
+.maptip{position:absolute;pointer-events:none;background:var(--eclipse);color:#fff;border-radius:10px;padding:6px;width:180px;font-size:12px;opacity:0;transition:opacity .12s;z-index:5}
+.maptip img{border-radius:6px;width:100%;height:110px;object-fit:cover;margin-bottom:6px}
+.legend{background:var(--branco);border-radius:var(--r);box-shadow:var(--shadow);padding:20px;font-size:13px;display:flex;flex-direction:column;gap:10px}
+.legend h4{margin:0 0 4px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--g65)}
+.legend .li{display:flex;align-items:center;gap:10px}
+.legend .li i{width:14px;height:14px;border-radius:50%;flex:0 0 14px;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.legend .note{color:var(--g65);font-size:12px;margin-top:auto;border-top:1px solid var(--sirius);padding-top:10px}
+
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding-bottom:20px}
+.gi{position:relative;border:0;padding:0;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:var(--nebulosa);text-align:left}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.gi:hover img{transform:scale(1.05)}
+.gi .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;font-size:12.5px;font-weight:500;line-height:1.3}
+.gi .no{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;font-weight:600;border-radius:6px;padding:2px 7px}
+.gi .src{position:absolute;right:10px;top:10px;background:var(--aurora);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:3px 7px}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:#0A0C0F;display:none;flex-direction:column;color:#fff}
+.lb.on{display:flex}
+.lb .lb-top{display:flex;align-items:center;gap:12px;padding:14px 20px;font-size:13px;color:var(--nebulosa)}
+.lb .lb-top .x{margin-left:auto;background:rgba(255,255,255,.1);border:0;color:#fff;width:40px;height:40px;border-radius:50%;font-size:20px}
+.lb .stage{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0;padding:0 70px}
+.lb .stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:0;color:#fff;width:50px;height:50px;border-radius:50%;font-size:22px}
+.lb .nav:hover{background:var(--aurora)}
+.lb .prev{left:12px}.lb .next{right:12px}
+.lb .lb-cap{padding:14px 20px 20px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.lb .lb-cap h3{margin:0;font-size:18px;font-weight:600;flex:1 1 100%}
+.lb .lb-cap span{font-size:13px;color:var(--nebulosa)}
+.lb .lb-cap a{font-size:13px;color:var(--aurora);font-weight:600;text-decoration:none}
+
+/* Team */
+.team{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;background:var(--branco);border-radius:var(--r);box-shadow:var(--shadow);padding:14px 20px;margin-bottom:18px}
+.team .tl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--g65);font-weight:600;margin-right:6px}
+.team .pp{display:flex;align-items:center;gap:10px}
+.team .av{width:36px;height:36px;border-radius:50%;background:var(--eclipse);color:#fff;display:grid;place-items:center;font-weight:600;font-size:13px}
+.team .pp:first-of-type .av{background:var(--aurora)}
+.team b{display:block;font-size:14px;font-weight:600;line-height:1.2}
+.team small{font-size:12px;color:var(--g65)}
+/* Region */
+.reg{display:grid;grid-template-columns:1fr 1.15fr;gap:22px}
+.regl{background:var(--branco);border-radius:var(--r);box-shadow:var(--shadow);padding:8px 22px}
+.ri{display:flex;flex-direction:column;gap:2px;padding:12px 0;border-bottom:1px solid var(--sirius)}
+.ri:last-child{border-bottom:0}
+.ri span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--g65);font-weight:600}
+.ri b{font-size:15px;font-weight:500}
+.regr{background:var(--branco);border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px;display:flex;flex-direction:column}
+.regr h4{margin:0 0 10px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--g65)}
+.rain svg{width:100%;height:auto;display:block}
+.rleg{display:flex;gap:18px;font-size:12px;color:var(--g85);margin-top:6px}
+.rleg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.robs{margin:14px 0 0;font-size:13.5px;background:var(--aurora-50);border-radius:10px;padding:10px 12px;color:var(--g95)}
+.fontes{font-size:11.5px;color:var(--g65);margin-top:12px;line-height:1.6}
+.fontes a{color:var(--g65)}
+footer{margin-top:48px;background:var(--branco);border-top:1px solid var(--nebulosa)}
+footer .wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding-top:22px;padding-bottom:22px;font-size:12px;color:var(--g65)}
+footer img{height:18px}
+footer .sp{margin-left:auto}
+
+@media (max-width:900px){
+  .sum,.mapbox,.reg{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .ck,.steps{grid-template-columns:1fr}
+  .top .area,.top .sep{display:none}
+  .vhero{min-height:380px}
+  .lb .stage{padding:0 8px}
+  .lb .nav{width:40px;height:40px}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .grid-v{grid-template-columns:1fr}
+  .score{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr);gap:8px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <img class="logo" src="logo.png" alt="SolarGrid" onclick="go('')">
+  <span class="sep"></span><span class="area">Engenharia de Projetos · Visitas Técnicas</span>
+  <nav class="crumb" id="crumb"></nav>
+</div></header>
+<main id="app"></main>
+<footer><div class="wrap">
+  <img src="logo.png" alt="SolarGrid"><span>Portal de Visitas Técnicas · Engenharia de Projetos</span>
+  <span class="sp" id="upd"></span><span>solargrid.com.br</span>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <div class="lb-top"><span id="lbCount"></span><button class="x" onclick="closeLb()" aria-label="Fechar">×</button></div>
+  <div class="stage"><button class="nav prev" onclick="stepLb(-1)" aria-label="Anterior">‹</button><img id="lbImg" alt=""><button class="nav next" onclick="stepLb(1)" aria-label="Próxima">›</button></div>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+const CATS={geral:{n:'Visão geral',c:'#000000',t:'#fff'},conexao:{n:'Conexão e rede',c:'#EAFF67',t:'#000'},entorno:{n:'Acesso e entorno',c:'#7C7C7B',t:'#fff'},drenagem:{n:'Drenagem e açude',c:'#183356',t:'#fff'},rochas:{n:'Rochas',c:'#EC6726',t:'#fff'},solo:{n:'Solo e fauna',c:'#F33C13',t:'#fff'},vegetacao:{n:'Vegetação',c:'#CBD6D7',t:'#000'},outros:{n:'Outros',c:'#FFFFFF',t:'#000'}};
+const ST={ok:{n:'Favorável',i:'✓'},atencao:{n:'Atenção',i:'!'},critico:{n:'Crítico',i:'✕'},pendente:{n:'Pendente',i:'?'}};
+const PAR={ressalvas:'b-ressalvas',viavel:'b-viavel',inviavel:'b-inviavel'};
+let DB=null, CUR=null, LB={list:[],i:0}, homeFilter='todas', homeQ='', galCat='todas', ckSt='todos';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fdate=d=>{const [y,m,dd]=d.split('-');return `${dd}/${m}/${y}`};
+const counts=v=>{const c={ok:0,atencao:0,critico:0,pendente:0};v.checklist.forEach(i=>c[i.st]++);return c};
+const foto=(v,id)=>v.fotos.find(f=>f.id===id);
+function go(h){location.hash=h?h:'inicio'}
+
+async function load(){
+  try{const r=await fetch('visitas.json');DB=await r.json()}catch(e){$('#app').innerHTML='<div class="wrap empty">Não foi possível carregar as visitas.</div>';return}
+  $('#upd').textContent='Atualizado em '+fdate(DB.atualizado);
+  route();
+}
+function route(){
+  const h=location.hash.replace('#','');
+  const v=DB.visitas.find(x=>x.id===h);
+  closeLb();
+  if(v){CUR=v;galCat='todas';ckSt='todos';renderVisit(v)}else{CUR=null;renderHome()}
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);
+
+/* ---------- HOME ---------- */
+function renderHome(){
+  $('#crumb').innerHTML='';
+  document.title='Visitas Técnicas — Engenharia de Projetos SolarGrid';
+  const ufs=[...new Set(DB.visitas.map(v=>v.local.split('/')[1]))].sort();
+  $('#app').innerHTML=`
+  <div class="wrap">
+    <div class="hero-home">
+      <div class="eyebrow">Engenharia de Projetos</div>
+      <h1 class="big">Visitas <b>técnicas</b> de terrenos</h1>
+      <p class="lead">Relatórios das visitas a áreas candidatas a usinas: parecer, checklist de campo, riscos, mapa e fotos. Selecione uma visita.</p>
+    </div>
+    <div class="toolbar">
+      <label class="search"><span style="color:var(--g45)">⌕</span><input id="q" placeholder="Buscar por usina, cidade ou estado" value="${esc(homeQ)}"></label>
+      <div class="chips" id="ufChips">${['todas',...ufs].map(u=>`<button class="chip ${homeFilter===u?'on':''}" data-u="${u}">${u==='todas'?'Todas':u}<span class="n">${u==='todas'?DB.visitas.length:DB.visitas.filter(v=>v.local.endsWith('/'+u)).length}</span></button>`).join('')}</div>
+    </div>
+    <div class="grid-v" id="gridV"></div>
+  </div>`;
+  $('#q').addEventListener('input',e=>{homeQ=e.target.value;drawCards()});
+  document.querySelectorAll('#ufChips .chip').forEach(b=>b.onclick=()=>{homeFilter=b.dataset.u;document.querySelectorAll('#ufChips .chip').forEach(x=>x.classList.toggle('on',x===b));drawCards()});
+  drawCards();
+}
+function drawCards(){
+  const q=homeQ.trim().toLowerCase();
+  const list=DB.visitas.filter(v=>(homeFilter==='todas'||v.local.endsWith('/'+homeFilter))&&(!q||(v.nome+' '+v.local+' '+v.endereco).toLowerCase().includes(q))).sort((a,b)=>b.data.localeCompare(a.data));
+  $('#gridV').innerHTML=list.length?list.map(v=>{const c=counts(v),cap=foto(v,v.capa);return `
+    <button class="vcard" onclick="go('${v.id}')">
+      <div class="ph"><img src="${cap.th}" alt="" loading="lazy"><span class="tag badge ${PAR[v.parecer.nivel]}">${esc(v.parecer.titulo)}</span><span class="count">${v.fotos.length} fotos</span></div>
+      <div class="bd"><h3>${esc(v.nome)}</h3>
+        <div class="meta"><span>📍 ${esc(v.local)}</span><span>📅 ${fdate(v.data)}</span></div>
+        <div class="bars">
+          ${c.critico?`<span class="st-critico">${c.critico} crítico${c.critico>1?'s':''}</span>`:''}
+          ${c.atencao?`<span class="st-atencao">${c.atencao} atenção</span>`:''}
+          ${c.ok?`<span class="st-ok">${c.ok} ${c.ok>1?'favoráveis':'favorável'}</span>`:''}
+          ${c.pendente?`<span class="st-pendente">${c.pendente} pendente${c.pendente>1?'s':''}</span>`:''}
+        </div>
+      </div>
+    </button>`}).join(''):'<div class="empty">Nenhuma visita encontrada.</div>';
+}
+
+/* ---------- VISIT ---------- */
+function renderVisit(v){
+  document.title=v.nome+' — Visita Técnica SolarGrid';
+  $('#crumb').innerHTML=`<button onclick="go('')">← Todas as visitas</button>`;
+  const c=counts(v), cap=foto(v,v.capa);
+  const gmaps=`https://www.google.com/maps?q=${v.centro[0]},${v.centro[1]}&t=k`;
+  $('#app').innerHTML=`
+  <div class="vhero"><img src="${cap.arq}" alt="">
+    <div class="wrap">
+      <div class="eyebrow">${esc(v.tipo)}</div>
+      <h1><b>${esc(v.nome)}</b></h1>
+      <div class="meta"><span>📍 ${esc(v.local)} · ${esc(v.endereco)}</span><span>📅 ${fdate(v.data)}</span><span>👥 ${v.participantes.length} participantes</span><span>📷 ${v.fotos.length} fotos</span><a href="${gmaps}" target="_blank" rel="noopener">Abrir no Google Maps ↗</a></div>
+    </div>
+  </div>
+  <nav class="subnav"><div class="wrap">
+    ${[['resumo','Resumo'],...(v.regiao?[['regiao','Região e clima']]:[]),['checklist','Checklist'],['passos','Próximos passos'],['mapa','Mapa'],['fotos','Fotos']].map(([id,n])=>`<button data-s="${id}" onclick="document.getElementById('s-${id}').scrollIntoView()">${n}</button>`).join('')}
+  </div></nav>
+  <div class="wrap">
+    <section class="blk" id="s-resumo">
+      <h2 class="sec">Resumo da visita</h2><p class="sec-sub">Parecer preliminar e principais constatações de campo.</p>
+      <div class="team"><span class="tl">Participantes</span>${v.participantes.map(p=>`<div class="pp"><span class="av">${p.n.split(' ').map(x=>x[0]).slice(0,2).join('')}</span><div><b>${esc(p.n)}</b><small>${esc(p.a)}</small></div></div>`).join('')}</div>
+      <div class="sum">
+        <div class="verdict">
+          <span class="lbl">Parecer preliminar</span>
+          <div class="v">${esc(v.parecer.titulo)}</div>
+          <p>${esc(v.parecer.texto)}</p>
+          <div class="score">
+            <div><b>${c.critico}</b><small>Críticos</small></div><div><b>${c.atencao}</b><small>Atenção</small></div>
+            <div><b>${c.ok}</b><small>Favoráveis</small></div>${c.pendente?`<div><b>${c.pendente}</b><small>Pendentes</small></div>`:''}
+          </div>
+        </div>
+        <div class="keys"><h4>Principais constatações</h4><ul>
+          ${v.destaques.map(d=>`<li class="${d.t}"><i>${d.t==='pos'?'+':'−'}</i><span>${esc(d.x)}</span></li>`).join('')}
+        </ul></div>
+      </div>
+      <div class="kpis">${v.kpis.map(k=>`<div class="kpi"><b>${esc(k.v)}</b><span>${esc(k.l)}</span></div>`).join('')}</div>
+    </section>
+
+    ${v.regiao?`<section class="blk" id="s-regiao">
+      <h2 class="sec">Região e clima</h2><p class="sec-sub">Contexto ambiental e janela de chuvas para planejamento de obra.</p>
+      <div class="reg">
+        <div class="regl">${v.regiao.itens.map(i=>`<div class="ri"><span>${esc(i.k)}</span><b>${esc(i.v)}</b></div>`).join('')}</div>
+        <div class="regr"><h4>Chuva média mensal (mm)</h4><div class="rain" id="rain"></div>
+          <div class="rleg"><span><i style="background:var(--aurora)"></i>Período chuvoso</span><span><i style="background:var(--nebulosa)"></i>Período seco</span></div>
+          <p class="robs">${esc(v.regiao.obs)}</p></div>
+      </div>
+      <div class="fontes">Fontes: ${v.regiao.fontes.map(f=>`<a href="${f.u}" target="_blank" rel="noopener">${esc(f.t)}</a>`).join(' · ')}</div>
+    </section>`:''}
+
+    <section class="blk" id="s-checklist">
+      <h2 class="sec">Checklist de campo</h2><p class="sec-sub">${v.checklist.length} itens verificados em campo. Registro de campo + implicação para o projeto. Clique nas fotos para ampliar.</p>
+      <div class="ck-filter" id="ckF"></div>
+      <div class="ck" id="ckL"></div>
+    </section>
+
+    <section class="blk" id="s-passos">
+      <h2 class="sec">Próximos passos recomendados</h2><p class="sec-sub">Ações para levar a área ao projeto básico, por prioridade.</p>
+      <div class="steps">${v.passos.map((p,i)=>`<div class="step"><span class="num">${i+1}</span><div><span class="pr pr-${p.p}">${p.p}</span><p>${esc(p.x)}</p></div></div>`).join('')}</div>
+    </section>
+
+    <section class="blk" id="s-mapa">
+      <h2 class="sec">Mapa da área</h2><p class="sec-sub">Polígonos da área (KMZ/KML) e posição de cada foto georreferenciada. Passe o mouse sobre um ponto para ver a foto; clique para ampliar.</p>
+      <div class="mapbox"><div class="map" id="map"><div class="maptip" id="tip"></div></div><div class="legend" id="legend"></div></div>
+    </section>
+
+    <section class="blk" id="s-fotos">
+      <h2 class="sec">Registro fotográfico</h2><p class="sec-sub">Filtre por tema.</p>
+      <div class="chips" id="galF" style="margin-bottom:16px"></div>
+      <div class="gal" id="gal"></div>
+    </section>
+  </div>`;
+  drawChecklist(v); drawGallery(v); drawMap(v); drawRain(v);
+  spy();
+}
+function drawChecklist(v){
+  const c=counts(v);
+  $('#ckF').innerHTML=[['todos','Todos',v.checklist.length],...Object.keys(ST).filter(k=>c[k]).map(k=>[k,ST[k].n,c[k]])].map(([k,n,q])=>`<button class="chip ${ckSt===k?'on':''}" data-k="${k}">${n}<span class="n">${q}</span></button>`).join('');
+  $('#ckF').querySelectorAll('.chip').forEach(b=>b.onclick=()=>{ckSt=b.dataset.k;drawChecklist(v)});
+  const order={critico:0,atencao:1,pendente:2,ok:3};
+  const items=v.checklist.filter(i=>ckSt==='todos'||i.st===ckSt);
+  $('#ckL').innerHTML=items.map(i=>`
+    <article class="citem ${i.st}">
+      <div class="hd"><h3><small>ITEM ${String(i.n).padStart(2,'0')}</small>${esc(i.item)}</h3><span class="badge st-${i.st}">${ST[i.st].i} ${ST[i.st].n}</span></div>
+      <div class="fld">${esc(i.campo)}</div>
+      ${i.impl?`<div class="impl"><b>Implicação:</b> ${esc(i.impl)}</div>`:''}
+      ${i.fotos.length?`<div class="thumbs">${i.fotos.map(id=>{const f=foto(v,id);return `<button onclick='openLb(${JSON.stringify(i.fotos)},${id})' title="${esc(f.legenda)}"><img src="${f.th}" alt="${esc(f.legenda)}" loading="lazy"></button>`}).join('')}</div>`:''}
+    </article>`).join('');
+}
+function drawGallery(v){
+  const cc={};v.fotos.forEach(f=>f.cats.forEach(k=>cc[k]=(cc[k]||0)+1));
+  $('#galF').innerHTML=[['todas','Todas',v.fotos.length],...Object.keys(CATS).filter(k=>cc[k]).map(k=>[k,CATS[k].n,cc[k]])].map(([k,n,q])=>`<button class="chip ${galCat===k?'on':''}" data-k="${k}">${k!=='todas'?`<i style="width:9px;height:9px;border-radius:50%;background:${CATS[k].c};display:inline-block;box-shadow:0 0 0 1px rgba(0,0,0,.3)"></i>`:''}${n}<span class="n">${q}</span></button>`).join('');
+  $('#galF').querySelectorAll('.chip').forEach(b=>b.onclick=()=>{galCat=b.dataset.k;drawGallery(v)});
+  const list=v.fotos.filter(f=>galCat==='todas'||f.cats.includes(galCat));
+  const ids=list.map(f=>f.id);
+  $('#gal').innerHTML=list.map(f=>`<button class="gi" onclick='openLb(${JSON.stringify(ids)},${f.id})'><img src="${f.th}" alt="${esc(f.legenda)}" loading="lazy"><span class="no">#${f.id}</span>${f.origem!=='Campo'?`<span class="src">${f.origem}</span>`:''}<span class="cap">${esc(f.legenda)}</span></button>`).join('');
+}
+function drawMap(v){
+  const Z=18, TS=256*Math.pow(2,Z);
+  const wp=(lat,lon)=>{const x=(lon+180)/360*TS;const s=Math.sin(lat*Math.PI/180);const y=(0.5-Math.log((1+s)/(1-s))/(4*Math.PI))*TS;return [x,y]};
+  const pts=v.fotos.filter(f=>f.gps);
+  const pols=v.poligonos||[];
+  let x0,y0,w,h;
+  if(v.satelite){({x0,y0,w,h}=v.satelite)}else{
+    const all=[...pts.map(f=>wp(f.gps[0],f.gps[1])),...pols.flatMap(p=>p.pts.map(q=>wp(q[0],q[1])))];
+    const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]),pad=60;
+    x0=Math.min(...xs)-pad;y0=Math.min(...ys)-pad;w=Math.max(...xs)-x0+pad;h=Math.max(...ys)-y0+pad;
+  }
+  const W=1000,S=W/w,H=Math.round(h*S);
+  const P=(lat,lon)=>{const [x,y]=wp(lat,lon);return [(x-x0)*S,(y-y0)*S]};
+  const latC=v.centro[0], mpp=156543.03392*Math.cos(latC*Math.PI/180)/Math.pow(2,Z);
+  const bar=100/mpp*S;
+  // polygons
+  const fmt=n=>n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const polySvg=pols.map((p,i)=>{const xy=p.pts.map(q=>P(q[0],q[1]));const d=xy.map(q=>q.join(',')).join(' ');
+    const cx=xy.reduce((s,q)=>s+q[0],0)/xy.length, cy=xy.reduce((s,q)=>s+q[1],0)/xy.length;
+    const fill=p.tipo==='nao'?'url(#hatch)':p.cor;const fo=p.tipo==='nao'?1:.14;
+    return `<polygon points="${d}" fill="${fill}" fill-opacity="${fo}" stroke="${p.cor}" stroke-width="${p.tipo==='nao'?2:3}" ${p.tipo==='nao'?'stroke-dasharray="7 5"':''}/>`}).join('');
+  const polyLab=pols.map(p=>{const xy=p.pts.map(q=>P(q[0],q[1]));const cx=xy.reduce((s,q)=>s+q[0],0)/xy.length, cy=xy.reduce((s,q)=>s+q[1],0)/xy.length;
+    const t=`${p.nome.replace('Área de licenciamento ','Área ')} · ${fmt(p.area)} ha`;const tw=t.length*6.3+12;
+    return `<g transform="translate(${cx-tw/2},${cy})" pointer-events="none"><rect width="${tw}" height="20" rx="10" fill="${p.tipo==='nao'?'#000':p.cor}" fill-opacity=".9"/><text x="${tw/2}" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">${t}</text></g>`}).join('');
+  // pins (de-overlap)
+  const placed=[],pos={};
+  pts.forEach(f=>{const [x0p,y0p]=P(f.gps[0],f.gps[1]);let x=x0p,y=y0p,a=0;while(placed.some(p=>Math.hypot(p[0]-x,p[1]-y)<20)){a+=1.1;const r=20+a*1.6;x=x0p+r*Math.cos(a);y=y0p+r*Math.sin(a)}placed.push([x,y]);pos[f.id]=[x,y,x0p,y0p]});
+  const dark=k=>k==='outros'||k==='vegetacao'||k==='conexao';
+  const pins=pts.map(f=>{const k=f.cats[0],[x,y,a,b]=pos[f.id];return `${(x!==a||y!==b)?`<line x1="${a}" y1="${b}" x2="${x}" y2="${y}" stroke="#fff" stroke-width="1.2"/><circle cx="${a}" cy="${b}" r="2.5" fill="#fff"/>`:''}<g class="pin" data-id="${f.id}" transform="translate(${x},${y})"><circle class="dot" r="9.5" fill="${CATS[k].c}" stroke="${dark(k)?'#000':'#fff'}" stroke-width="${dark(k)?1.2:2.5}"/><text y="3.5" text-anchor="middle" font-size="9" font-weight="700" fill="${CATS[k].t}">${f.id}</text></g>`}).join('');
+  const lab=(id,t,dx,dy)=>{if(!pos[id])return'';const tw=t.length*6.6+10;if(dx<0)dx-=tw;return `<g transform="translate(${pos[id][0]+dx},${pos[id][1]+dy})" pointer-events="none"><rect x="0" y="-13" width="${tw}" height="19" rx="5" fill="#000"/><text x="5" y="1" font-size="11" font-weight="600" fill="#fff">${t}</text></g>`};
+  const sat=v.satelite;
+  $('#map').insertAdjacentHTML('beforeend',`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Mapa de pontos fotografados e áreas de licenciamento">
+    <defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#000" fill-opacity=".25"/><line x1="0" y1="0" x2="0" y2="8" stroke="#fff" stroke-width="2.5" stroke-opacity=".8"/></pattern></defs>
+    ${sat?`<image href="${sat.img}" x="0" y="0" width="${W}" height="${H}" preserveAspectRatio="none"/>`:`<rect width="${W}" height="${H}" fill="#F7F8F8"/>`}
+    ${polySvg}${polyLab}${pins}
+    ${(v.rotulos||[]).map(r=>lab(r.id,r.t,r.dx,r.dy)).join('')}
+    <g transform="translate(${W-40},40)"><circle r="20" fill="#fff" fill-opacity=".92"/><path d="M0,-13 L6,7 L0,3 L-6,7Z" fill="#EC6726"/><text y="-23" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" stroke="#000" stroke-width="3" paint-order="stroke">N</text></g>
+    <g transform="translate(20,${H-22})"><rect x="-8" y="-24" width="${bar+40}" height="38" rx="6" fill="#fff" fill-opacity=".9"/><rect width="${bar}" height="6" fill="#000"/><rect width="${bar/2}" height="6" fill="#fff" stroke="#000"/><text y="-8" font-size="11" font-weight="600">0</text><text x="${bar}" y="-8" font-size="11" font-weight="600" text-anchor="middle">100 m</text></g>
+    ${sat?`<text x="${W-8}" y="${H-8}" text-anchor="end" font-size="10" fill="#fff" fill-opacity=".85">${esc(sat.attrib)}</text>`:''}
+  </svg>`);
+  const tip=$('#tip'), box=$('#map');
+  box.querySelectorAll('.pin').forEach(p=>{
+    const f=foto(v,+p.dataset.id);
+    p.addEventListener('mouseenter',()=>{tip.innerHTML=`<img src="${f.th}"><b>#${f.id}</b> ${esc(f.legenda)}${f.hora?` · ${f.hora}`:''}`;tip.style.opacity=1});
+    p.addEventListener('mousemove',e=>{const r=box.getBoundingClientRect();let x=e.clientX-r.left+14,y=e.clientY-r.top+14;if(x+190>r.width)x-=210;if(y+170>r.height)y-=190;tip.style.left=x+'px';tip.style.top=y+'px'});
+    p.addEventListener('mouseleave',()=>tip.style.opacity=0);
+    p.addEventListener('click',()=>{tip.style.opacity=0;openLb(pts.map(x=>x.id),f.id)});
+  });
+  const cc={};pts.forEach(f=>cc[f.cats[0]]=(cc[f.cats[0]]||0)+1);
+  $('#legend').innerHTML=`${pols.length?`<h4>Áreas</h4>${pols.map(p=>`<div class="li"><i style="border-radius:3px;${p.tipo==='nao'?'background:repeating-linear-gradient(45deg,#000 0 3px,#fff 3px 6px);':`background:${p.cor};`}box-shadow:0 0 0 1px rgba(0,0,0,.35)"></i>${esc(p.nome)}<span style="color:var(--g45);margin-left:auto;white-space:nowrap">${fmt(p.area)} ha</span></div>`).join('')}<div style="height:6px"></div>`:''}
+   <h4>Fotos por tema</h4>${Object.keys(CATS).filter(k=>cc[k]).map(k=>`<div class="li"><i style="background:${CATS[k].c};box-shadow:0 0 0 1px rgba(0,0,0,.35)"></i>${CATS[k].n} <span style="color:var(--g45);margin-left:auto">${cc[k]}</span></div>`).join('')}
+   <div class="note">${pts.length} de ${v.fotos.length} fotos têm coordenadas. Polígonos conforme arquivo KMZ/KML da área.${sat?' Imagem de satélite: '+esc(sat.attrib)+'.':''}</div>`;
+}
+function drawRain(v){
+  if(!v.regiao)return;const d=v.regiao.chuva,M=['J','F','M','A','M','J','J','A','S','O','N','D'],MM=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const W=520,H=230,pl=30,pb=26,pt=18,bw=(W-pl-10)/12,mx=Math.ceil(Math.max(...d)/20)*20;
+  const y=val=>pt+(H-pt-pb)*(1-val/mx);
+  let g='';for(let t=0;t<=mx;t+=20)g+=`<line x1="${pl}" x2="${W-6}" y1="${y(t)}" y2="${y(t)}" stroke="#EEF1F1"/><text x="${pl-6}" y="${y(t)+4}" font-size="10" text-anchor="end" fill="#7C7C7B">${t}</text>`;
+  const bars=d.map((val,i)=>{const wet=i>=2&&i<=6;const x=pl+i*bw+bw*.18;return `<g><title>${MM[i]}: ${val} mm</title><rect x="${x}" y="${y(val)}" width="${bw*.64}" height="${H-pb-y(val)}" rx="3" fill="${wet?'#EC6726':'#CBD6D7'}"/><text x="${x+bw*.32}" y="${y(val)-5}" font-size="10" font-weight="600" text-anchor="middle" fill="${wet?'#B5470F':'#7C7C7B'}">${val}</text><text x="${x+bw*.32}" y="${H-8}" font-size="11" font-weight="600" text-anchor="middle" fill="#4A4A49">${M[i]}</text></g>`}).join('');
+  $('#rain').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Chuva média mensal">${g}${bars}</svg>`;
+}
+function spy(){
+  const btns=[...document.querySelectorAll('.subnav button')];
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){btns.forEach(b=>b.classList.toggle('on',('s-'+b.dataset.s)===e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section.blk').forEach(s=>io.observe(s));
+}
+
+/* ---------- LIGHTBOX ---------- */
+function openLb(list,id){LB.list=list;LB.i=Math.max(0,list.indexOf(id));showLb();$('#lb').classList.add('on');document.body.style.overflow='hidden'}
+function closeLb(){$('#lb').classList.remove('on');document.body.style.overflow=''}
+function stepLb(d){LB.i=(LB.i+d+LB.list.length)%LB.list.length;showLb()}
+function showLb(){
+  const f=foto(CUR,LB.list[LB.i]);
+  $('#lbImg').src=f.arq;$('#lbImg').alt=f.legenda;
+  $('#lbCount').textContent=`${LB.i+1} / ${LB.list.length}`;
+  $('#lbCap').innerHTML=`<h3>#${f.id} · ${esc(f.legenda)}</h3><span>${f.cats.map(k=>CATS[k].n).join(' · ')}</span><span>${f.origem}${f.hora?' · '+f.hora:''}</span>${f.gps?`<a href="https://www.google.com/maps?q=${f.gps[0]},${f.gps[1]}&t=k" target="_blank" rel="noopener">Ver local no Google Maps ↗</a>`:''}`;
+  [-1,1].forEach(d=>{const n=foto(CUR,LB.list[(LB.i+d+LB.list.length)%LB.list.length]);if(n){const im=new Image();im.src=n.arq}});
+}
+document.addEventListener('keydown',e=>{if(!$('#lb').classList.contains('on'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')stepLb(1);if(e.key==='ArrowLeft')stepLb(-1)});
+let tx=null;$('#lb').addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
+$('#lb').addEventListener('touchend',e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)stepLb(d<0?1:-1);tx=null});
+$('#lb').addEventListener('click',e=>{if(e.target.classList.contains('stage'))closeLb()});
+load();
+</script>
+</body>
+</html>
